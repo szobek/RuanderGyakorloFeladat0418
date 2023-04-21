@@ -55,7 +55,7 @@ public class Menu {
         String fajl = "teszt.txt";
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(fajl)); ){
             for (String nev : nevek) {
-                bw.append(nev);
+                bw.append(nev+"\n");
             }
             System.out.println("fájlbaírás kész");
         }catch (IOException e){
